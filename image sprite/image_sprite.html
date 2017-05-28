@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Sprite</title>
+    <style>
+        .menu {
+            list-style-type: none;
+        }
+
+        .menu li {
+            padding: 5px;
+            font-size: 16px;
+        }
+
+        .menu li a div {
+            height: 100px;
+            width: 0px;
+            line-height: 100px;
+            padding-left: 100px;
+            display: inline-block;
+            color: #ad0404;
+            background: url("sprite.png") no-repeat 50%;
+        }
+
+        .menu li a div.facebook {
+            background-position: 0px 0px;
+        }
+
+        .menu li a div.facebook:hover {
+            background-position: 0px -100px;
+        }
+
+        .menu li a div.youtube {
+            background-position: -200px 0px;
+        }
+
+        .menu li a div.youtube:hover {
+            background-position: -200px -99px;
+        }
+
+        .menu li a div.linkedin {
+            background-position: -400px 0px;
+        }
+
+        .menu li a div.linkedin:hover {
+            background-position: -400px -100px;
+        }
+    </style>
+</head>
+<body>
+<ul class="menu">
+    <li><a href="https://www.facebook.com/">
+        <div class="facebook">Facebook</div>
+    </a></li>
+    <li><a href="https://www.youtube.com/">
+        <div class="youtube">YouTube</div>
+    </a></li>
+    <li><a href="https://www.linkedin.com/">
+        <div class="linkedin">LinkedIn</div>
+    </a></li>
+</ul>
+</body>
+</html>
